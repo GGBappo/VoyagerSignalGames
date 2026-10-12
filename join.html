@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reach out, join the community, or contact Voyager Signal Games.">
+    <title>Join Us | Voyager Signal Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="join">
+    <header class="site-header"></header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Reach Out</p>
+        <h1>Join the signal.</h1>
+        <p class="hero-text" data-field="contactText"></p>
+      </section>
+      <section class="join-layout">
+        <div class="contact-card">
+          <h2>Contact</h2>
+          <a class="large-link" data-field="emailLink" href="#"></a>
+          <div class="social-list" data-repeat="socials"></div>
+        </div>
+        <div class="contact-card">
+          <h2>Community</h2>
+          <p data-field="communityText"></p>
+          <div class="button-row" data-repeat="communityActions"></div>
+        </div>
+        <div class="contact-card">
+          <h2>Join the Team</h2>
+          <p data-field="joinText"></p>
+          <div class="button-row" data-repeat="joinActions"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="site-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Improvised is a silly visual novel story puzzle game from Voyager Signal Games.">
+    <title>Improvised | Voyager Signal Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="game">
+    <header class="site-header"></header>
+    <main>
+      <section class="game-hero">
+        <div class="game-hero-copy">
+          <p class="eyebrow">In Development</p>
+          <h1 data-field="gameTitle"></h1>
+          <p class="hero-text" data-field="gameLongPitch"></p>
+          <div class="store-row" data-repeat="storeLinks"></div>
+        </div>
+        <img class="character-art" src="Art/Intern_IMG1.png" alt="Improvised intern alien character art">
+      </section>
+
+      <section class="feature-callout reversed">
+        <img src="Art/Intern_IMG_Concept1.png" alt="Improvised early gameplay screenshot concept">
+        <div>
+          <p class="eyebrow">The Premise</p>
+          <h2>A fake human. Real bombs. Family drama from space.</h2>
+          <p data-field="gamePremise"></p>
+        </div>
+      </section>
+
+      <section class="game-details">
+        <div class="detail-card">
+          <h2>Game Info</h2>
+          <dl data-repeat="gameFacts"></dl>
+        </div>
+        <div class="detail-card">
+          <h2>Gameplay Pillars</h2>
+          <div class="pillars" data-repeat="gamePillars"></div>
+        </div>
+      </section>
+
+      <section class="art-section">
+        <div class="section-heading">
+          <p class="eyebrow">Artwork</p>
+          <h2>Concepts from Improvised.</h2>
+          <p>Check out this art made by our amazing team! This is still early concept art!</p>
+        </div>
+        <div class="art-grid" data-repeat="artwork"></div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="site-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

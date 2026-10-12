@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Voyager Signal Games is a Connecticut indie studio turning unexpected ideas into fun, memorable games.">
+    <title>Voyager Signal Games | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="home">
+    <header class="site-header"></header>
+    <main>
+      <section class="home-hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-field="heroEyebrow"></p>
+          <h1 data-field="heroTitle"></h1>
+          <p class="hero-text" data-field="heroText"></p>
+          <div class="button-row" data-repeat="heroActions"></div>
+        </div>
+        <div class="hero-signal" aria-hidden="true">
+          <img src="Art/VSG Logo Transparent.png" alt="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="fact-strip" data-repeat="facts" aria-label="Studio facts"></section>
+
+      <section class="split-section">
+        <div>
+          <p class="eyebrow">About Voyager Signal Games</p>
+          <h2>Idea-first games from a growing indie team.</h2>
+        </div>
+        <div class="prose" data-field="studioBody"></div>
+      </section>
+
+      <section class="feature-callout">
+        <div>
+          <p class="eyebrow">Current Project</p>
+          <h2 data-field="gameTitle"></h2>
+          <p data-field="gameShortPitch"></p>
+          <div class="button-row" data-repeat="gameActions"></div>
+        </div>
+        <img src="Art/Intern_IMG_Concept1.png" alt="Improvised visual novel screenshot concept">
+      </section>
+
+      <section class="values-section">
+        <div class="section-heading">
+          <p class="eyebrow">Studio Values</p>
+          <h2>How we build.</h2>
+        </div>
+        <div class="value-grid" data-repeat="values"></div>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="site-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
