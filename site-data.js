@@ -98,7 +98,7 @@ window.VSG_SITE_DATA = {
       role: "Founder, Lead Programmer, Gameplay Programmer",
       teams: ["Programming"],
       bio: "Founded Voyager Signal Games in June 2026 and leads gameplay programming for Improvised.",
-      discord: "kumiamill"
+      discord: "GoodGuyBappo"
     },
     {
       name: "Phia",
@@ -150,7 +150,7 @@ window.VSG_SITE_DATA = {
     },
     {
       name: "Karim",
-      pronouns: "",
+      pronouns: "he/him",
       role: "Game Manager, Programmer",
       teams: ["Programming"],
       bio: "Helps manage game development and contributes programming work across the project.",
@@ -158,7 +158,7 @@ window.VSG_SITE_DATA = {
     },
     {
       name: "Vincent",
-      pronouns: "",
+      pronouns: "he/him",
       role: "Character Artist, Environmental Artist",
       teams: ["Art"],
       bio: "Creates character and environmental art for Improvised.",
