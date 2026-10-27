@@ -114,7 +114,7 @@ window.VSG_SITE_DATA = {
       role: "UI/UX Programmer, UI Artist",
       teams: ["Programming", "Art"],
       bio: "Builds interface systems and helps shape the game's UI art and player-facing experience.",
-      discord: "BadGuyCubclean"
+      discord: "ClubClean"
     },
     {
       name: "Death Royal",
@@ -138,7 +138,7 @@ window.VSG_SITE_DATA = {
       role: "Concept Artist, Character Artist, Environmental Artist",
       teams: ["Art"],
       bio: "Creates concept art, character art, and environmental art for the game.",
-      discord: "Kai"
+      discord: "YSPDem0n"
     },
     {
       name: "Beth",
