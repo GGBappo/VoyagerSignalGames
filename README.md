@@ -11,7 +11,8 @@ index.html
 ## Pages
 
 - `index.html` - Home page with the studio overview and values.
-- `game.html` - Improvised game page.
+- `projects.html` - Games in development at the studio.
+- `game.html` - IMPROVISED game page and concept art.
 - `developers.html` - Meet the developers page.
 - `updates.html` - Development updates.
 - `join.html` - Contact, Discord, and join/community page.

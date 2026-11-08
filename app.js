@@ -33,8 +33,13 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         ${(data.nav || [])
           .map(
-            (item) =>
-              `<a class="${item.page === currentPage ? "active" : ""}" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`
+            (item) => {
+              const isCurrent = item.page === currentPage;
+              const isParent = item.page === "projects" && currentPage === "game";
+              const active = isCurrent || isParent ? ' class="active"' : "";
+              const current = isCurrent ? ' aria-current="page"' : isParent ? ' aria-current="true"' : "";
+              return `<a${active}${current} href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`;
+            }
           )
           .join("")}
       </nav>
@@ -62,7 +67,7 @@
   const renderers = {
     heroActions: renderActions,
     gameActions: renderActions,
-    storeLinks: renderActions,
+    gamePageActions: renderActions,
     communityActions: renderActions,
     joinActions: renderActions,
     facts: (items) =>
@@ -114,7 +119,7 @@
         .map(
           (item) => `
             <article class="art-card">
-              <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}">
+              <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy">
               <div>
                 <h3>${escapeHtml(item.title)}</h3>
                 <p>${escapeHtml(item.text)}</p>

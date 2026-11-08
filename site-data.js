@@ -3,7 +3,7 @@ window.VSG_SITE_DATA = {
   logo: "Art/VSG Logo Transparent.png",
   nav: [
     { label: "Home", href: "index.html", page: "home" },
-    { label: "Improvised", href: "game.html", page: "game" },
+    { label: "Projects", href: "projects.html", page: "projects" },
     { label: "Developers", href: "developers.html", page: "developers" },
     { label: "Updates", href: "updates.html", page: "updates" },
     { label: "Join Us", href: "join.html", page: "join" }
@@ -13,7 +13,7 @@ window.VSG_SITE_DATA = {
   heroText:
     "Voyager Signal Games is a rising independent studio founded in June 2026 by Hassan Jannan. Our team is building fun, silly, and memorable games, starting with the comedy story puzzle game Improvised.",
   heroActions: [
-    { label: "See Improvised", href: "game.html", style: "primary" },
+    { label: "Explore Our Projects", href: "projects.html", style: "primary" },
     { label: "Join Us", href: "join.html", style: "secondary" }
   ],
   facts: [
@@ -35,23 +35,23 @@ window.VSG_SITE_DATA = {
     { title: "Player Experience", text: "Make games players remember after they are done playing." },
     { title: "Learning", text: "Grow as developers while building the studio and its games." }
   ],
-  gameTitle: "Improvised",
+  gameTitle: "IMPROVISED",
   gameShortPitch:
-    "A silly visual novel story puzzle game about an alien trying to blend into human society while defusing bombs planted by their evil alien brother.",
+    "A comedy visual novel and puzzle game about an alien trying to pass for human while defusing bombs with whatever tools happen to be nearby.",
   gameLongPitch:
-    "Improvised is a comedy visual novel and story puzzle game where you play as an alien from one faction trying to stop your evil alien brother and his rival faction from planting bombs on Earth. To save the planet, you have to blend in with human society, keep your cover, solve puzzles, and defuse every bomb before things get extremely awkward.",
+    "You’re an undercover alien trying to stop your brother’s faction from planting bombs on Earth. Between visual novel scenes, you race the clock with whatever you can get your hands on: nail clippers, duct tape, or even a potato. Each mission introduces characters and clues that tie the bomb disposal jobs into a larger story.",
   gamePremise:
     "You are not exactly human, but Earth does not need to know that. Your brother's faction is causing chaos, your own faction is counting on you, and somehow the mission involves workplace conversations, social disguises, and puzzle-solving under pressure. It is early in development, but the goal is a funny, memorable story game that mixes visual novel choices with playful puzzle mechanics.",
   gameActions: [
     { label: "Learn About Improvised", href: "game.html", style: "primary" },
     { label: "Follow Updates", href: "updates.html", style: "secondary" }
   ],
-  storeLinks: [
-    { label: "Steam Page Coming Soon", href: "#", style: "primary" },
-    { label: "itch.io Page Coming Soon", href: "#", style: "secondary" }
+  gamePageActions: [
+    { label: "Follow Development", href: "updates.html", style: "primary" },
+    { label: "Back to Projects", href: "projects.html", style: "secondary" }
   ],
   gameFacts: [
-    { label: "Title", value: "Improvised" },
+    { label: "Title", value: "IMPROVISED" },
     { label: "Status", value: "Early development" },
     { label: "Genre", value: "Comedy visual novel, story puzzle" },
     { label: "Platforms", value: "Steam and itch.io planned" },
@@ -60,7 +60,7 @@ window.VSG_SITE_DATA = {
   ],
   gamePillars: [
     { title: "Blend In", text: "Navigate human spaces while pretending you totally understand how Earth works." },
-    { title: "Defuse the Chaos", text: "Solve story puzzles and stop the bombs before your brother's faction wins." },
+    { title: "Defuse the Chaos", text: "Experiment with unconventional tools, manage your budget, and complete tasks while the clock is running." },
     { title: "Choose Your Cover", text: "Visual-novel scenes let comedy, character choices, and mission pressure collide." },
     { title: "Stay Weird", text: "Improvised is built around silly concepts, strange situations, and memorable moments." }
   ],
