@@ -13,6 +13,7 @@ index.html
 - `index.html` - Home page with the studio overview and values.
 - `projects.html` - Games in development at the studio.
 - `game.html` - IMPROVISED game page and concept art.
+- `art.html` - Full art gallery with links to original images.
 - `developers.html` - Meet the developers page.
 - `updates.html` - Development updates.
 - `join.html` - Contact, Discord, and join/community page.
@@ -26,12 +27,11 @@ Update these sections first:
 - `nav` - page navigation labels and links.
 - `heroTitle`, `heroText`, and `heroActions` - home page hero.
 - `studioBody`, `facts`, and `values` - company overview.
-- `gameTitle`, `gameLongPitch`, `gameFacts`, `gamePillars`, and `artwork` - Improvised page.
+- `gameTitle`, `gameLongPitch`, `gameFacts`, and `gamePillars` - IMPROVISED page.
+- `artwork` - Gallery categories, artwork titles, and captions. Entries marked `featured` also appear on the IMPROVISED page.
 - `developersIntro` and `developers` - developer profiles, pronouns, roles, team tags, bios, and Discord names.
 - `updates` - updates page posts.
-- `email`, `socials`, `communityActions`, and `joinActions` - Join Us page links.
-
-Replace the `#` placeholders with real Discord, Steam, itch.io, and YouTube links when they are ready.
+- `email`, `communityActions`, and `joinActions` - Join Us page links.
 
 ## Customize Design
 
@@ -48,8 +48,8 @@ The website uses images from the `Art` folder. The original logo remains untouch
 Art/VSG Logo Transparent.png
 ```
 
-Add new game art to `Art`, then reference it in `site-data.js`:
+Add each original PNG to `Art` and a matching WebP preview to `Art/previews`. Use the same base filename for both, then add an entry in `site-data.js`:
 
 ```js
-image: "Art/New Artwork.png"
+{ group: "Character designs", title: "New Character", file: "New Artwork.png", text: "Early character turnaround." }
 ```

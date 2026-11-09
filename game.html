@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261109-studio-art">
   </head>
   <body data-page="game">
     <header class="site-header"></header>
@@ -18,17 +18,21 @@
           <p class="eyebrow">In Development</p>
           <h1 data-field="gameTitle"></h1>
           <p class="hero-text" data-field="gameLongPitch"></p>
-          <div class="store-row" data-repeat="gamePageActions"></div>
+          <div class="button-row" data-repeat="gamePageActions"></div>
         </div>
-        <img class="character-art" src="Art/Intern_IMG1.png" alt="Improvised intern alien character art">
+        <div class="character-panel">
+          <img src="Art/previews/Intern_IMG1.webp" alt="The IMPROVISED intern in uniform with a clipboard">
+        </div>
       </section>
 
-      <section class="feature-callout reversed">
-        <img src="Art/Intern_IMG_Concept1.png" alt="Improvised early gameplay screenshot concept">
+      <section class="feature-callout">
         <div>
           <p class="eyebrow">The Premise</p>
           <h2>Blend in. Defuse the chaos.</h2>
           <p data-field="gamePremise"></p>
+        </div>
+        <div class="feature-art">
+          <img src="Art/previews/Intern_IMG_Concept1.webp" alt="Early office dialogue concept for IMPROVISED" loading="lazy">
         </div>
       </section>
 
@@ -54,17 +58,18 @@
         </div>
       </section>
 
-      <section class="art-section">
+      <section class="art-section" id="artwork">
         <div class="section-heading">
           <p class="eyebrow">Artwork</p>
           <h2>Concepts from IMPROVISED.</h2>
-          <p>Early character designs, scene concepts, and storyboards from our art team.</p>
+          <p>A look at the characters, environments, and interfaces our art team is developing.</p>
         </div>
-        <div class="art-grid" data-repeat="artwork"></div>
+        <div class="art-grid" data-repeat="artwork" data-featured></div>
+        <div class="button-row centered"><a class="button" href="art.html">Explore the Art Gallery</a></div>
       </section>
     </main>
     <footer class="site-footer"></footer>
-    <script src="site-data.js?v=20261107-projects"></script>
-    <script src="app.js?v=20261107-projects"></script>
+    <script src="site-data.js?v=20261109-studio-art"></script>
+    <script src="app.js?v=20261109-studio-art"></script>
   </body>
 </html>

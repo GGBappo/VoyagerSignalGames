@@ -1,9 +1,9 @@
 window.VSG_SITE_DATA = {
   studioName: "Voyager Signal Games",
-  logo: "Art/VSG Logo Transparent.png",
   nav: [
     { label: "Home", href: "index.html", page: "home" },
     { label: "Projects", href: "projects.html", page: "projects" },
+    { label: "Art Gallery", href: "art.html", page: "art" },
     { label: "Developers", href: "developers.html", page: "developers" },
     { label: "Updates", href: "updates.html", page: "updates" },
     { label: "Join Us", href: "join.html", page: "join" }
@@ -65,12 +65,21 @@ window.VSG_SITE_DATA = {
     { title: "Stay Weird", text: "Improvised is built around silly concepts, strange situations, and memorable moments." }
   ],
   artwork: [
-    { title: "Intern Character Art", image: "Art/Intern_IMG1.png", text: "Colored character artwork for the alien intern persona." },
-    { title: "Gameplay Concept", image: "Art/Intern_IMG_Concept1.png", text: "Early visual-novel scene concept for dialogue and choices." },
-    { title: "Character Exploration", image: "Art/CharacterArt-Improvised.png", text: "Sketches exploring the intern and boss dynamic." },
-    { title: "Alien Concepts", image: "Art/IMG_6947.png", text: "Alien faction and character shape exploration." },
-    { title: "Boss Sketch", image: "Art/IMG_6978.png", text: "Early boss character concept sketch." },
-    { title: "Storyboard Ideas", image: "Art/image.png", text: "Rough storyboard beats and mobile-style puzzle ideas." }
+    { group: "Character designs", title: "Intern Character Art", file: "Intern_IMG1.png", text: "Full-color artwork of the intern in uniform." },
+    { group: "Character designs", title: "Intern Outfit Variants", file: "Intern_Character_Concept2.png", text: "Three color and outfit explorations for the intern.", featured: true },
+    { group: "Character designs", title: "Recruiter Turnaround", file: "recruiter_concept.png", text: "Front and back views of the recruiter, with a color palette." },
+    { group: "Character designs", title: "Alien Turnaround", file: "alien_concept.png", text: "Two views of a green alien and a silhouette for scale." },
+    { group: "Character designs", title: "Intern and Boss Sketches", file: "CharacterArt-Improvised.png", text: "Early sketches exploring the two workplace characters." },
+    { group: "Character designs", title: "Alien Character Sketches", file: "IMG_6947.png", text: "Early shapes, clothing, and proportions for two alien designs." },
+    { group: "Character designs", title: "Boss Sketch", file: "IMG_6978.png", text: "An early full-body sketch of the boss." },
+    { group: "Environments and levels", title: "Manager’s Desk", file: "manager_deskconcept.png", text: "An office workstation study with monitors, seating, and reference props.", featured: true },
+    { group: "Environments and levels", title: "Bakery Background Concept", file: "Bakery_BG_Concept.png", text: "A bakery and pizzeria mood board with a warm palette and minigame ideas." },
+    { group: "Environments and levels", title: "Bakery Level Art", file: "Level art.png", text: "The level-art export of the bakery and pizzeria concept board." },
+    { group: "Interface and storyboards", title: "Office Worker Interface", file: "OfficeWorker_UI_Concept.png", text: "A dialogue mockup with character portraits and response choices.", featured: true },
+    { group: "Interface and storyboards", title: "Intern Dialogue Concept", file: "Intern_IMG_Concept1.png", text: "An earlier visual novel interface study for an office scene." },
+    { group: "Interface and storyboards", title: "Storyboard Ideas", file: "image.png", text: "Rough panels exploring puzzle interactions and story beats." },
+    { group: "Studio logos", title: "Voyager Signal Games Logo", file: "VSG Logo.png", text: "The studio’s gold orbit logo on a white background." },
+    { group: "Studio logos", title: "Transparent Studio Logo", file: "VSG Logo Transparent.png", text: "The logo variant for use over other backgrounds." }
   ],
   updates: [
     {
@@ -86,7 +95,7 @@ window.VSG_SITE_DATA = {
     {
       date: "Coming Soon",
       title: "Steam and itch.io pages",
-      text: "Improvised is planned for Steam and itch.io. Store links can be added here as soon as they are available."
+      text: "Steam and itch.io are planned for IMPROVISED. We’ll share the store pages when they’re ready."
     }
   ],
   developersIntro:
@@ -168,19 +177,11 @@ window.VSG_SITE_DATA = {
   contactText:
     "Reach out for questions, community, development interest, publishing conversations, or to follow along as Improvised grows.",
   communityText:
-    "Discord details can go here. Add your server invite and public team Discord names in site-data.js whenever you are ready.",
+    "Follow our development updates for game milestones, artwork, and community news.",
   joinText:
-    "Voyager Signal Games is learning and growing as a team. This section can list open roles, collaboration needs, or how people can ask to join.",
+    "Interested in collaborating? Tell us what you do and include a link to your work if you have one.",
   email: "hello@voyagersignalgames.com",
-  socials: [
-    { label: "Discord Server", href: "#" },
-    { label: "Hassan Discord", href: "#" },
-    { label: "Steam", href: "#" },
-    { label: "itch.io", href: "#" },
-    { label: "YouTube", href: "#" }
-  ],
   communityActions: [
-    { label: "Discord Invite Coming Soon", href: "#", style: "primary" },
     { label: "Updates", href: "updates.html", style: "secondary" }
   ],
   joinActions: [

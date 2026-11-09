@@ -23,8 +23,10 @@
     if (!header) return;
 
     header.innerHTML = `
+      <div class="header-inner">
       <a class="brand" href="index.html" aria-label="${escapeHtml(data.studioName)} home">
-        <img src="${escapeHtml(data.logo)}" alt="${escapeHtml(data.studioName)} logo">
+        <span class="brand-orbit" aria-hidden="true"></span>
+        <span>${escapeHtml(data.studioName)}</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
@@ -43,6 +45,7 @@
           )
           .join("")}
       </nav>
+      </div>
     `;
 
     const navToggle = header.querySelector(".nav-toggle");
@@ -52,6 +55,12 @@
       navToggle.setAttribute("aria-expanded", String(!isOpen));
       siteNav.classList.toggle("is-open", !isOpen);
     });
+    header.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || navToggle.getAttribute("aria-expanded") !== "true") return;
+      navToggle.setAttribute("aria-expanded", "false");
+      siteNav.classList.remove("is-open");
+      navToggle.focus();
+    });
   };
 
   const renderFooter = () => {
@@ -59,9 +68,92 @@
     if (!footer) return;
 
     footer.innerHTML = `
-      <img src="${escapeHtml(data.logo)}" alt="">
+      <a class="brand" href="index.html">
+        <span class="brand-orbit" aria-hidden="true"></span>
+        <span>${escapeHtml(data.studioName)}</span>
+      </a>
       <p>${escapeHtml(data.footerText)}</p>
     `;
+  };
+
+  const renderArtworkCard = (item) => {
+    const original = encodeURIComponent(item.file);
+    const preview = encodeURIComponent(item.file.replace(/\.png$/i, ".webp"));
+    return `
+      <article class="art-card">
+        <a class="artwork-link" href="Art/${original}" aria-label="Enlarge ${escapeHtml(item.title)}">
+          <img src="Art/previews/${preview}" alt="" loading="lazy" decoding="async">
+          <span class="art-zoom" aria-hidden="true">↗</span>
+        </a>
+        <div class="art-card-copy">
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.text)}</p>
+        </div>
+      </article>
+    `;
+  };
+
+  const renderArtwork = (items, element) => {
+    if (element.hasAttribute("data-featured")) {
+      return items.filter((item) => item.featured).map(renderArtworkCard).join("");
+    }
+
+    const groups = new Map();
+    for (const item of items) {
+      if (!groups.has(item.group)) groups.set(item.group, []);
+      groups.get(item.group).push(item);
+    }
+    return Array.from(groups, ([title, entries]) => `
+      <section class="gallery-group">
+        <h2>${escapeHtml(title)}</h2>
+        <div class="art-grid">${entries.map(renderArtworkCard).join("")}</div>
+      </section>
+    `).join("");
+  };
+
+  const initArtworkViewer = () => {
+    const links = document.querySelectorAll(".artwork-link");
+    if (!links.length || typeof HTMLDialogElement === "undefined") return;
+
+    const dialog = document.createElement("dialog");
+    dialog.className = "art-viewer";
+    dialog.setAttribute("aria-labelledby", "art-viewer-title");
+    dialog.innerHTML = `
+      <div class="art-viewer-content">
+        <div class="art-viewer-header">
+          <h2 id="art-viewer-title"></h2>
+          <form method="dialog"><button type="submit" class="button button-secondary" autofocus>Close</button></form>
+        </div>
+        <img alt="">
+        <div class="art-viewer-caption">
+          <p></p>
+          <a target="_blank" rel="noopener">Open original ↗</a>
+        </div>
+      </div>
+    `;
+    document.body.append(dialog);
+
+    const image = dialog.querySelector("img");
+    const title = dialog.querySelector("h2");
+    const caption = dialog.querySelector("p");
+    const original = dialog.querySelector("a");
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        const card = link.closest(".art-card");
+        title.textContent = card.querySelector("h3").textContent;
+        caption.textContent = card.querySelector("p").textContent;
+        image.alt = title.textContent;
+        image.src = link.href;
+        original.href = link.href;
+        dialog.showModal();
+      });
+    });
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener("close", () => image.removeAttribute("src"));
   };
 
   const renderers = {
@@ -114,20 +206,7 @@
           `
         )
         .join(""),
-    artwork: (items) =>
-      items
-        .map(
-          (item) => `
-            <article class="art-card">
-              <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy">
-              <div>
-                <h3>${escapeHtml(item.title)}</h3>
-                <p>${escapeHtml(item.text)}</p>
-              </div>
-            </article>
-          `
-        )
-        .join(""),
+    artwork: renderArtwork,
     updates: (items) =>
       items
         .map(
@@ -159,10 +238,6 @@
             </article>
           `
         )
-        .join(""),
-    socials: (items) =>
-      items
-        .map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`)
         .join("")
   };
 
@@ -192,7 +267,8 @@
   document.querySelectorAll("[data-repeat]").forEach((element) => {
     const key = element.getAttribute("data-repeat");
     if (renderers[key] && data[key]) {
-      element.innerHTML = renderers[key](data[key]);
+      element.innerHTML = renderers[key](data[key], element);
     }
   });
+  initArtworkViewer();
 })();
