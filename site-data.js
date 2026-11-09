@@ -118,12 +118,12 @@ window.VSG_SITE_DATA = {
       discord: "phia"
     },
     {
-      name: "ClubClean",
+      name: "CubClean",
       pronouns: "he/him",
       role: "UI/UX Programmer, UI Artist",
       teams: ["Programming", "Art"],
       bio: "Builds interface systems and helps shape the game's UI art and player-facing experience.",
-      discord: "ClubClean"
+      discord: "CubClean"
     },
     {
       name: "Death Royal",
@@ -151,7 +151,7 @@ window.VSG_SITE_DATA = {
     },
     {
       name: "Beth",
-      pronouns: "",
+      pronouns: "she/they",
       role: "3D Artist",
       teams: ["Art"],
       bio: "Creates 3D art for Improvised and the studio's development work.",
