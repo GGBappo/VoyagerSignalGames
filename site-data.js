@@ -11,7 +11,7 @@ window.VSG_SITE_DATA = {
   heroEyebrow: "Connecticut Indie Game Studio",
   heroTitle: "Turning strange ideas into games worth remembering.",
   heroText:
-    "Voyager Signal Games is a rising independent studio founded in June 2026 by Hassan Jannan. Our team is building fun, silly, and memorable games, starting with the comedy story puzzle game Improvised.",
+    "Voyager Signal Games is a rising independent studio founded in June 2026 by Hassan Jannan. Our first game is a comedy puzzle adventure called Real Certified Bomb Diffuser (really!), or RCBDr.",
   heroActions: [
     { label: "Explore Our Projects", href: "projects.html", style: "primary" },
     { label: "Join Us", href: "join.html", style: "secondary" }
@@ -35,15 +35,15 @@ window.VSG_SITE_DATA = {
     { title: "Player Experience", text: "Make games players remember after they are done playing." },
     { title: "Learning", text: "Grow as developers while building the studio and its games." }
   ],
-  gameTitle: "IMPROVISED",
+  gameTitle: "Real Certified Bomb Diffuser (really!)",
   gameShortPitch:
-    "A comedy visual novel and puzzle game about an alien trying to pass for human while defusing bombs with whatever tools happen to be nearby.",
+    "RCBDr is a comedy visual novel and puzzle game about an alien trying to pass for human while defusing bombs with whatever tools happen to be nearby.",
   gameLongPitch:
     "You’re an undercover alien trying to stop your brother’s faction from planting bombs on Earth. Between visual novel scenes, you race the clock with whatever you can get your hands on: nail clippers, duct tape, or even a potato. Each mission introduces characters and clues that tie the bomb disposal jobs into a larger story.",
   gamePremise:
     "You are not exactly human, but Earth does not need to know that. Your brother's faction is causing chaos, your own faction is counting on you, and somehow the mission involves workplace conversations, social disguises, and puzzle-solving under pressure. It is early in development, but the goal is a funny, memorable story game that mixes visual novel choices with playful puzzle mechanics.",
   gameActions: [
-    { label: "Learn About Improvised", href: "game.html", style: "primary" },
+    { label: "Learn About RCBDr", href: "game.html", style: "primary" },
     { label: "Follow Updates", href: "updates.html", style: "secondary" }
   ],
   gamePageActions: [
@@ -51,7 +51,7 @@ window.VSG_SITE_DATA = {
     { label: "Back to Projects", href: "projects.html", style: "secondary" }
   ],
   gameFacts: [
-    { label: "Title", value: "IMPROVISED" },
+    { label: "Title", value: "Real Certified Bomb Diffuser (really!), or RCBDr" },
     { label: "Status", value: "Early development" },
     { label: "Genre", value: "Comedy visual novel, story puzzle" },
     { label: "Platforms", value: "Steam and itch.io planned" },
@@ -62,7 +62,7 @@ window.VSG_SITE_DATA = {
     { title: "Blend In", text: "Navigate human spaces while pretending you totally understand how Earth works." },
     { title: "Defuse the Chaos", text: "Experiment with unconventional tools, manage your budget, and complete tasks while the clock is running." },
     { title: "Choose Your Cover", text: "Visual-novel scenes let comedy, character choices, and mission pressure collide." },
-    { title: "Stay Weird", text: "Improvised is built around silly concepts, strange situations, and memorable moments." }
+    { title: "Stay Weird", text: "RCBDr is built around silly concepts, strange situations, and memorable moments." }
   ],
   artwork: [
     { group: "Character designs", title: "Intern Character Art", file: "Intern_IMG1.png", text: "Full-color artwork of the intern in uniform." },
@@ -84,29 +84,29 @@ window.VSG_SITE_DATA = {
   updates: [
     {
       date: "September 2026",
-      title: "Improvised enters early development",
+      title: "RCBDr enters early development",
       text: "Voyager Signal Games is building its first major project around comedy, visual-novel storytelling, and puzzle gameplay."
     },
     {
       date: "September 2026",
       title: "New intern artwork added",
-      text: "The Improvised art direction now includes colored character art and an early dialogue scene mockup."
+      text: "The RCBDr art direction now includes colored character art and an early dialogue scene mockup."
     },
     {
       date: "Coming Soon",
       title: "Steam and itch.io pages",
-      text: "Steam and itch.io are planned for IMPROVISED. We’ll share the store pages when they’re ready."
+      text: "Steam and itch.io are planned for RCBDr. We’ll share the store pages when they’re ready."
     }
   ],
   developersIntro:
-    "Meet the Voyager Signal Games team behind Improvised. Our artists, programmers, writer, music producer, and manager are building the game together while learning and growing as a studio.",
+    "Meet the Voyager Signal Games team behind RCBDr. Our artists, programmers, writer, music producer, and manager are building the game together while learning and growing as a studio.",
   developers: [
     {
       name: "Hassan Jannan",
       pronouns: "he/him",
       role: "Founder, Lead Programmer, Gameplay Programmer",
       teams: ["Programming"],
-      bio: "Founded Voyager Signal Games in June 2026 and leads gameplay programming for Improvised.",
+      bio: "Founded Voyager Signal Games in June 2026 and leads gameplay programming for RCBDr.",
       discord: "GoodGuyBappo"
     },
     {
@@ -114,7 +114,7 @@ window.VSG_SITE_DATA = {
       pronouns: "she/her",
       role: "Story Writer, Artist",
       teams: ["Art"],
-      bio: "Writes story material and creates art for the silly alien chaos of Improvised.",
+      bio: "Writes story material and creates art for the silly alien chaos of RCBDr.",
       discord: "phia"
     },
     {
@@ -138,7 +138,7 @@ window.VSG_SITE_DATA = {
       pronouns: "he/him",
       role: "Music Producer",
       teams: ["Sound"],
-      bio: "Produces music and helps define the sound of Improvised.",
+      bio: "Produces music and helps define the sound of RCBDr.",
       discord: "The Schworm"
     },
     {
@@ -154,7 +154,7 @@ window.VSG_SITE_DATA = {
       pronouns: "she/they",
       role: "3D Artist",
       teams: ["Art"],
-      bio: "Creates 3D art for Improvised and the studio's development work.",
+      bio: "Creates 3D art for RCBDr and the studio's development work.",
       discord: "beth"
     },
     {
@@ -170,12 +170,12 @@ window.VSG_SITE_DATA = {
       pronouns: "he/him",
       role: "Character Artist, Environmental Artist",
       teams: ["Art"],
-      bio: "Creates character and environmental art for Improvised.",
+      bio: "Creates character and environmental art for RCBDr.",
       discord: "vincent"
     }
   ],
   contactText:
-    "Reach out for questions, community, development interest, publishing conversations, or to follow along as Improvised grows.",
+    "Reach out for questions, community, development interest, publishing conversations, or to follow along as RCBDr grows.",
   communityText:
     "Follow our development updates for game milestones, artwork, and community news.",
   joinText:

@@ -12,7 +12,7 @@ index.html
 
 - `index.html` - Home page with the studio overview and values.
 - `projects.html` - Games in development at the studio.
-- `game.html` - IMPROVISED game page and concept art.
+- `game.html` - Real Certified Bomb Diffuser (really!) game page and concept art.
 - `art.html` - Full art gallery with links to original images.
 - `developers.html` - Meet the developers page.
 - `updates.html` - Development updates.
@@ -27,8 +27,8 @@ Update these sections first:
 - `nav` - page navigation labels and links.
 - `heroTitle`, `heroText`, and `heroActions` - home page hero.
 - `studioBody`, `facts`, and `values` - company overview.
-- `gameTitle`, `gameLongPitch`, `gameFacts`, and `gamePillars` - IMPROVISED page.
-- `artwork` - Gallery categories, artwork titles, and captions. Entries marked `featured` also appear on the IMPROVISED page.
+- `gameTitle`, `gameLongPitch`, `gameFacts`, and `gamePillars` - RCBDr page.
+- `artwork` - Gallery categories, artwork titles, and captions. Entries marked `featured` also appear on the RCBDr page.
 - `developersIntro` and `developers` - developer profiles, pronouns, roles, team tags, bios, and Discord names.
 - `updates` - updates page posts.
 - `email`, `communityActions`, and `joinActions` - Join Us page links.
