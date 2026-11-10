@@ -145,7 +145,7 @@ window.VSG_SITE_DATA = {
       name: "Kai",
       pronouns: "he/him",
       role: "Concept Artist, Character Artist, Environmental Artist",
-      teams: ["Art"],
+      teams: ["Art", "2D Artist"],
       bio: "Creates concept art, character art, and environmental art for the game.",
       discord: "YSPDem0n"
     },
@@ -153,7 +153,7 @@ window.VSG_SITE_DATA = {
       name: "Bethan Shirley",
       pronouns: "she/they",
       role: "3D Artist",
-      teams: ["Art"],
+      teams: ["Art", "3D Artist"],
       bio: "Creates 3D art for RCBDr and the studio's development work.",
       discord: "beth"
     },
@@ -169,7 +169,7 @@ window.VSG_SITE_DATA = {
       name: "Vincent",
       pronouns: "he/him",
       role: "Character Artist, Environmental Artist",
-      teams: ["Art"],
+      teams: ["Art", "2D Artist"],
       bio: "Creates character and environmental art for RCBDr.",
       discord: "vincent"
     }
