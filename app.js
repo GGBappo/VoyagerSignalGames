@@ -230,7 +230,7 @@
                 ${item.pronouns ? `<em>${escapeHtml(item.pronouns)}</em>` : ""}
                 <span>${escapeHtml(item.role)}</span>
                 <div class="team-tags">
-                  ${(item.teams || []).map((team) => `<b class="team-tag team-${escapeHtml(team.toLowerCase())}">${escapeHtml(team)}</b>`).join("")}
+                  ${(item.teams || []).map((team) => `<b class="team-tag team-${team.toLowerCase().replace(/[^a-z0-9]+/g, "-")}">${escapeHtml(team)}</b>`).join("")}
                 </div>
                 <p>${escapeHtml(item.bio)}</p>
                 <strong>${escapeHtml(item.discord)}</strong>

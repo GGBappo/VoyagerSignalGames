@@ -110,18 +110,18 @@ window.VSG_SITE_DATA = {
       discord: "GoodGuyBappo"
     },
     {
-      name: "Phia",
+      name: "Phiacin",
       pronouns: "she/her",
       role: "Story Writer, Artist",
-      teams: ["Art"],
+      teams: ["Art", "Story Writer", "Art Director"],
       bio: "Writes story material and creates art for the silly alien chaos of RCBDr.",
-      discord: "phia"
+      discord: "phiacinthesis"
     },
     {
       name: "CubClean",
       pronouns: "he/him",
       role: "UI/UX Programmer, UI Artist",
-      teams: ["Programming", "Art"],
+      teams: ["Programming", "Art", "UI/UX"],
       bio: "Builds interface systems and helps shape the game's UI art and player-facing experience.",
       discord: "CubClean"
     },
@@ -150,7 +150,7 @@ window.VSG_SITE_DATA = {
       discord: "YSPDem0n"
     },
     {
-      name: "Beth",
+      name: "Bethan Shirley",
       pronouns: "she/they",
       role: "3D Artist",
       teams: ["Art"],
