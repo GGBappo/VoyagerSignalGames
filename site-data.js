@@ -44,10 +44,12 @@ window.VSG_SITE_DATA = {
     "You are not exactly human, but Earth does not need to know that. Your brother's faction is causing chaos, your own faction is counting on you, and somehow the mission involves workplace conversations, social disguises, and puzzle-solving under pressure. It is early in development, but the goal is a funny, memorable story game that mixes visual novel choices with playful puzzle mechanics.",
   gameActions: [
     { label: "Learn About RCBDr", href: "game.html", style: "primary" },
+    { label: "Watch Gameplay", href: "game.html#gameplay", style: "secondary" },
     { label: "Follow Updates", href: "updates.html", style: "secondary" }
   ],
   gamePageActions: [
-    { label: "Follow Development", href: "updates.html", style: "primary" },
+    { label: "Watch Gameplay", href: "#gameplay", style: "primary" },
+    { label: "Follow Development", href: "updates.html", style: "secondary" },
     { label: "Back to Projects", href: "projects.html", style: "secondary" }
   ],
   gameFacts: [

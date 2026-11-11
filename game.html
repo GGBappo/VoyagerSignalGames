@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261109-rcbdr">
+    <link rel="stylesheet" href="styles.css?v=20261111-gameplay">
   </head>
   <body data-page="game">
     <header class="site-header"></header>
@@ -22,6 +22,36 @@
         </div>
         <div class="character-panel">
           <img src="Art/previews/Intern_IMG1.webp" alt="The RCBDr intern in uniform with a clipboard">
+        </div>
+      </section>
+
+      <section id="gameplay" aria-labelledby="gameplay-title">
+        <div class="section-heading">
+          <h2 id="gameplay-title">Gameplay and development clips</h2>
+          <p>See the RCBDr prototype in action and take a look at how it was built in Unity.</p>
+        </div>
+        <div class="gameplay-grid">
+          <figure class="gameplay-clip">
+            <video controls playsinline loop preload="none" width="1280" height="720"
+              poster="Media/RCBDr/mission-prototype.jpg" aria-labelledby="mission-clip-label">
+              <source src="Media/RCBDr/mission-prototype.mp4" type="video/mp4">
+            </video>
+            <figcaption id="mission-clip-label">Timed mission prototype</figcaption>
+          </figure>
+          <figure class="gameplay-clip">
+            <video controls playsinline loop preload="none" width="1280" height="720"
+              poster="Media/RCBDr/interface-animation.jpg" aria-labelledby="interface-clip-label">
+              <source src="Media/RCBDr/interface-animation.mp4" type="video/mp4">
+            </video>
+            <figcaption id="interface-clip-label">Interface animation in Unity</figcaption>
+          </figure>
+          <figure class="gameplay-clip">
+            <video controls playsinline loop preload="none" width="1280" height="720"
+              poster="Media/RCBDr/unity-project.jpg" aria-labelledby="unity-clip-label">
+              <source src="Media/RCBDr/unity-project.mp4" type="video/mp4">
+            </video>
+            <figcaption id="unity-clip-label">Behind the scenes in Unity</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -69,7 +99,7 @@
       </section>
     </main>
     <footer class="site-footer"></footer>
-    <script src="site-data.js?v=20261109-rcbdr"></script>
+    <script src="site-data.js?v=20261111-gameplay"></script>
     <script src="app.js?v=20261109-studio-art"></script>
   </body>
 </html>
